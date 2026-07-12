@@ -1,0 +1,174 @@
+.login-page {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--surface-color);
+  margin: 0;
+  position: relative;
+}
+
+.p-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.p-navbar__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group:nth-of-type(1) {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  padding-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--toss-grey-900);
+}
+
+.login-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--toss-grey-200);
+  padding: 0 16px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--toss-blue);
+}
+
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sso-btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--toss-grey-200);
+  background-color: #FFFFFF;
+  color: var(--toss-grey-700);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sso-btn:hover {
+  background-color: var(--toss-grey-100);
+}
+
+.login-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: var(--toss-grey-700);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.login-links span {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--toss-grey-600, #4E5968);
+}
+
+.login-links .divider {
+  width: 1px;
+  height: 16px;
+  background-color: var(--toss-grey-400);
+}
+
+.login-right {
+  flex: 1;
+  background-color: #F2F4F6;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-wrapper iframe {
+  width: 1440px;
+  height: 1024px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  overflow: hidden;
+}

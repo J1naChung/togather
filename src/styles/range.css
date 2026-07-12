@@ -1,0 +1,49 @@
+.range-card-content {
+  display: flex;
+  gap: 24px;
+}
+
+.range-input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.range-input-group label {
+  color: var(--toss-grey-500);
+  font-size: 13px;
+}
+
+.select-box {
+  width: 100%;
+  height: 52px;
+  border: 1px solid var(--toss-grey-200);
+  border-radius: 8px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: var(--surface-color);
+  color: var(--toss-grey-900);
+}
+
+.select-box select {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.create-content .range-card { margin-bottom: 24px; padding: 24px; border: 1px solid #e9ecf1; border-radius: 12px; }
+.create-content .range-card-title { margin-bottom: 12px; line-height: 24px; }
+.create-content .range-box { border-color: #d1d6db; }

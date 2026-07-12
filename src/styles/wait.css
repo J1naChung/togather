@@ -1,0 +1,51 @@
+/* 답변 기다리는 화면 (Figma 11:8359) */
+
+.wait-content { padding: 44px 48px 88px; gap: 0; }
+.wait-content .back-link { height: 32px; margin-bottom: 44px; font-size: 18px; }
+
+.wait-body { display: flex; flex-direction: column; }
+.wait-body .page-title { margin-bottom: 64px; }
+
+.wait-cards { display: flex; flex-direction: column; gap: 24px; }
+
+.wait-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: rgba(217, 119, 6, 0.07);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 12px;
+}
+.wait-notice img { display: block; flex-shrink: 0; }
+.wait-notice-texts { display: flex; flex-direction: column; gap: 2px; }
+.wait-notice-title { color: #191f28; font-size: 14px; font-weight: 600; }
+.wait-notice-sub { color: #6b7684; font-size: 13px; font-weight: 400; }
+
+.wait-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e9ecf1;
+  border-radius: 12px;
+}
+.wait-card-title { color: #191f28; font-size: 16px; font-weight: 600; line-height: 24px; }
+
+.wait-status-row { display: flex; align-items: center; gap: 14px; }
+.wait-avatar { width: 44px; height: 44px; border-radius: 999px; background: #de9ca2; color: #fff; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.wait-person-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.wait-person-name { color: #191f28; font-size: 14px; font-weight: 500; line-height: 21px; }
+.wait-person-role { color: #6b7684; font-size: 13px; font-weight: 400; letter-spacing: -0.1px; }
+
+.wait-info-grid { display: flex; gap: 20px; }
+.wait-info-col { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.wait-info-label { color: #6b7684; font-size: 14px; font-weight: 400; line-height: 21px; }
+.wait-info-value { color: #191f28; font-size: 14px; font-weight: 500; line-height: 21px; }
+.wait-info-value.green { color: #0e9f6e; font-weight: 600; }
+
+.wait-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin-top: 64px; }
+.wait-text-btn { height: 48px; padding: 12px; background: none; border: none; color: #4e5968; font-size: 14px; font-weight: 600; line-height: 21px; cursor: pointer; }
+.wait-actions .btn-outline { min-height: 48px; padding: 12px 20px; border-radius: 12px; border-color: #e9ecf1; color: #4e5968; font-size: 16px; }
+.wait-actions .btn-primary { min-height: 48px; padding: 12px 20px; font-size: 16px; }

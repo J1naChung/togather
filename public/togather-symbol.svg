@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <!-- togather symbol · color · transparent background -->
+  <defs>
+    <linearGradient id="gTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#71B3FF"/><stop offset="1" stop-color="#3E8EF7"/>
+    </linearGradient>
+    <linearGradient id="gBot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F7EF4"/><stop offset="1" stop-color="#0757DD"/>
+    </linearGradient>
+    <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sTop" x="-30%" y="-30%" width="160%" height="190%">
+      <feDropShadow dx="0" dy="2.4" stdDeviation="2.2" flood-color="#062B66" flood-opacity="0.32"/>
+    </filter>
+    <filter id="sBot" x="-30%" y="-30%" width="160%" height="190%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#062B66" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g transform="translate(0,-1)">
+    <g filter="url(#sBot)">
+      <rect x="22" y="39" width="40" height="16" rx="8" fill="url(#gBot)"/>
+      <rect x="22" y="39" width="40" height="16" rx="8" fill="url(#hl)"/>
+    </g>
+    <g filter="url(#sTop)">
+      <rect x="10" y="19" width="40" height="16" rx="8" fill="url(#gTop)"/>
+      <rect x="10" y="19" width="40" height="16" rx="8" fill="url(#hl)"/>
+    </g>
+  </g>
+</svg>

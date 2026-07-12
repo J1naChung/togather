@@ -1,0 +1,8 @@
+# 프로토타입에 필요한 파일만 추적 (index.html, index.css, src/, public/)
+/*
+!/index.html
+!/index.css
+!/src
+!/public
+!/.gitignore
+.DS_Store

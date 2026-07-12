@@ -1,0 +1,247 @@
+.detail-banner {
+  background-color: var(--toss-blue-light);
+  border: 1px solid var(--toss-blue-border, #D0E5FD);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.detail-banner-label {
+  color: #1b64da;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.detail-banner-time {
+  font-size: 18px;
+  font-weight: 600;
+  color: #191f28;
+}
+
+.detail-banner-status {
+  color: #0e9f6e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.detail-timeline-card {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--toss-grey-200);
+  background-color: var(--surface-color);
+}
+
+.detail-timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.detail-timeline-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.detail-timeline-subtitle {
+  color: var(--toss-grey-500);
+  font-size: 14px;
+}
+
+.date-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-nav-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--toss-grey-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--surface-color);
+}
+
+.date-nav-text {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.timeline-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  position: relative;
+}
+
+/* Figma(11:6893): 타임라인 좌우 가장자리 페이드 오버레이 */
+.timeline-grid::before {
+  content: "";
+  position: absolute;
+  left: 190px;
+  top: 42px;
+  bottom: 0;
+  width: 48px;
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.timeline-grid::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 42px;
+  bottom: 0;
+  width: 92px;
+  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.timeline-row {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-row-header {
+  width: 190px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.timeline-person-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.timeline-person-role {
+  color: var(--toss-grey-500);
+  font-size: 12px;
+}
+
+.timeline-cells {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+.timeline-time-header {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+  margin-left: 0;
+  margin-bottom: 8px;
+}
+
+.timeline-time-label {
+  flex: 1;
+  text-align: center;
+  color: var(--toss-grey-500);
+  font-size: 13px;
+}
+
+.timeline-cell {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 34px;
+  border-radius: 8px;
+  background-color: var(--toss-grey-100);
+}
+
+.timeline-cell.available {
+  background-color: rgba(21, 196, 126, 0.18);
+}
+
+.timeline-cell.unavailable {
+  background-color: #e9ecf1;
+}
+
+.timeline-cell.selected-col {
+  border: 2px solid var(--toss-blue);
+  border-radius: 8px;
+}
+
+.timeline-time-label.selected-col {
+  border: 1px solid var(--toss-blue);
+  border-radius: 6px;
+  color: var(--toss-blue);
+  background-color: #e8f1ff;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+.detail-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.prefs-applied {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prefs-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pref-chip {
+  background-color: #fff;
+  border: 1px solid #e9ecf1;
+  color: var(--toss-grey-700);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--toss-grey-600);
+}
+
+.legend-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-box.avail { background-color: #D3F3DF; }
+.legend-box.unavail { background-color: var(--toss-grey-200); }
+
+.detail-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 64px;
+}
+
+.detail-content { padding: 44px 48px 88px; gap: 0; }
+.detail-content .back-link { height: 32px; margin-bottom: 44px; font-size: 18px; }
+.detail-content .result-title { margin: 0 0 24px !important; font-size: 28px; line-height: 40px; }
+/* Figma(11:7071): bg rgba(49,130,246,0.07), border rgba(49,130,246,0.25) */
+.detail-content .detail-banner { margin-bottom: 64px; padding: 20px 24px; background-color: rgba(49, 130, 246, 0.07); border-color: rgba(49, 130, 246, 0.25); border-radius: 12px; }
+.detail-content .detail-timeline-card { border-color: #e9ecf1; border-radius: 12px; }
+.detail-content .person-avatar { width: 28px; height: 28px; font-size: 12px; }

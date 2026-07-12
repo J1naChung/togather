@@ -1,0 +1,161 @@
+.app-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex: 1;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: var(--surface-color);
+  border-right: 1px solid #eaecf0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  height: 28px;
+  padding: 0 10px;
+}
+
+.sidebar-logo { cursor: pointer; }
+.sidebar-logo img { display: block; width: 110px; height: 28px; }
+
+.btn-primary {
+  background-color: var(--toss-blue);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 48px;
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 231px;
+}
+
+.sidebar-navigation { display: flex; flex-direction: column; gap: 8px; width: 231px; height: 301px; }
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--toss-grey-700);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: var(--toss-grey-100);
+}
+
+/* Figma(95:162): 활성 항목 bg rgba(49,130,246,0.1), 아이콘·텍스트 #1b64da */
+.menu-item.active {
+  background-color: rgba(49, 130, 246, 0.1);
+  color: #1b64da;
+  font-weight: 600;
+}
+
+.menu-item .icon svg {
+  display: block;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background-color: #eaecf0;
+  margin: 0;
+  width: 231px;
+  flex: 0 0 1px;
+}
+
+.notification-item .icon { position: relative; display: flex; width: 20px; height: 20px; }
+.notification-item .icon::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 14px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #fff;
+  border-radius: 3.5px;
+  background: #f04452;
+}
+
+.sidebar-spacer {
+  flex: 1;
+}
+
+.sidebar-profile {
+  padding: 8px 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--toss-blue-light);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.avatar.pink { background-color: #DE9CA2; }
+.avatar.orange { background-color: #DDB273; }
+.avatar.green { background-color: #7FC4A6; }
+.avatar.grey { 
+  background-color: #F2F4F6; 
+  color: var(--toss-grey-700); 
+}
+
+.main-content {
+  flex: 1;
+  padding: 88px 48px;
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  min-width: 0;
+}
+
+/* Figma 1440 기준 콘텐츠 폭(1084px)을 유지하고, 넓은 화면에서는 가운데 정렬 */
+.main-content > * {
+  width: 100%;
+  max-width: 1084px;
+  flex-shrink: 0;
+}
+
+.sidebar { padding: 16px; gap: 24px; }
+.sidebar-menu { display: flex; flex-direction: column; gap: 8px; }
+.sidebar .t-body-1 { font-size: 14px; line-height: normal; }
+.sidebar-profile .avatar { background: #8aa9db; }
+.profile-info { display: flex; flex-direction: column; gap: 1px; }
+.profile-info .t-body-2 { color: #191f28; font-size: 12px; font-weight: 600; line-height: normal; }
+.profile-info .t-caption { color: #6b7684; font-size: 12px; font-weight: 400; line-height: normal; }
+
+.menu-item.active .t-body-1 {
+  font-weight: 700;
+}
