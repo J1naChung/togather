@@ -6,4 +6,5 @@
 !/public
 !/.gitignore
 !/.nojekyll
+!/.github
 .DS_Store
